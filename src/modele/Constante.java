@@ -7,7 +7,8 @@ import java.util.*;
 public class Constante {
 
     public static final Map<String, String> Membre_Ville = new HashMap<>();
-    public static final List<String> Liste_Villes = new ArrayList<>();
+    public static final List<String> listeScenario = new ArrayList<>();
+    public static final Map<String,ArrayList<String>> Liste_voisin = new HashMap();
 
     public Constante() throws FileNotFoundException {
         File membre = new File("data/membres_APPLI.txt");
@@ -40,12 +41,25 @@ public class Constante {
             String Ville2 = Split[1].trim();
 
             // Ajouter les villes dans la liste principale
-            Liste_Villes.add(Ville1);
-            Liste_Villes.add(Ville2);
+            listeScenario.add(Ville1);
+            listeScenario.add(Ville2);
+        }
+        Reader2.close();
+        }
+
+        public Map<String,String> getMembre_Ville() {return Membre_Ville;}
+        public List<String> getScenario() {return listeScenario;}
+
+
+    public Map<String,List<String>> getVille() {
+        Map<String,List<String>> Ville = new TreeMap<>();
+        for(Map.Entry<String,String> entry : {
+            String vendeur = entry.getKey();
+            String acheteur = entry.getValue();
 
 
         }
-        Reader2.close();
+     return Ville;
     }
 
 }
