@@ -12,7 +12,7 @@ public class SolutionSimple {
 
     public ArrayList<String> getVille() {
         ArrayList<String> solution = new ArrayList<>();
-        for(String e : listeScenario) {
+        for(String e : mapScenario) {
             solution.add(Membre_Ville.get(e));
         }
         return solution;
