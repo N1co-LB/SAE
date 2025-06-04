@@ -1,0 +1,20 @@
+#labelTypeSolution {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#labelDistance {
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+}
+
+#labelSolution {
+    -fx-font-size: 15;
+}
+
+.root {
+    -fx-background-color: cornsilk;
+}
+
